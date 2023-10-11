@@ -1,0 +1,10 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container p {
+    display: flex;
+    justify-content: center;
+}
