@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Skranji:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Croissant+One&family=Dela+Gothic+One&family=Skranji:wght@700&display=swap');
+
+/* Global Attribute */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Navbar */
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.logo h4 {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 23px;
+    font-family: 'Dela Gothic One', cursive; 
+}
+
+.icon {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.nav {
+    width: 100%;
+    height: 9%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.nav li a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Main page content */
+.main-page {
+    height: 100vh;
+    background: url(Bg.avif);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+}
+
+.home img {
+    width: 180px;
+    height: 180px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.home h2 {
+    display: flex;
+    align-items: center;
+    color: orange;
+    text-shadow: 0.5px 0.5px #000;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 120px;
+}
+
+/* About Us Content */
+.about-us {
+    height: 110vh;
+}
+
+.about-us-title {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-title h1 {
+    margin-top: 100px;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.content-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.content-1 p {
+    max-width: 500px;
+    justify-content: center;
+    align-self: top;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 50px;
+}
+
+.content-1 img {
+    border-radius: 40px;
+    border: 3px solid orange;
+    box-shadow: 7px 7px 12px -3px rgba(0,0,0,0.5);
+    width: 400px;
+}
+
+.product-us {
+    height: 110vh;
+}
+
+.product-us-title {
+    display: flex;
+    justify-content: center;
+}
+
+.product-us-title h1 {
+    margin-top: 100px;
+    font-size: 36px;
+}    
+
+.image {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.image .images img {
+    width: 100px;
+    height: 100px;
+}
+
+.images {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.images h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.images h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+.buyButton {
+    background-color: #16ff00; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Hapus border */
+    border-radius: 5px; /* Agar tombol memiliki sudut melengkung */
+    padding: 5px 25px; /* Padding di atas dan bawah lebih besar, padding kiri dan kanan lebih kecil */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
+    transition: background-color 0.3s; /* Efek transisi ketika tombol dihover */
+    margin-bottom: 10px;
+  }
+  
+  .buyButton:hover {
+    background-color: #0fdd00; /* Warna latar belakang saat dihover */
+  }
+  
+/* Styling for Contact Us section */
+.contact-us {
+    padding: 80px;
+    text-align: center;
+    height: 100vh;
+}
+
+.ctitle {
+    margin-top: -25px;
+    padding-top: 50px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-us-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="date"],
+.contact-form input[type="file"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #5469d4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+}
+
+.contact-form button:hover {
+    background-color: #1a1f36;
+}
+/* Footer Content */
+.footer-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container p {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+/* Gaya untuk Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: orange;
+}
+
+/* Kotak pada Product */
+.dark-mode .image .images {
+    border: 2px solid orange; /* Mengubah warna border menjadi putih */
+    background-color: black; /* Mengubah warna latar belakang menjadi hitam */
+}
+
+.dark-mode .content-1 {
+    background-color: black;
+    color: white;
+}
+
+.mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-button {
+    margin-right: 20px;
+    width: 53px;
+    height: 28px;
+    background-color: black;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-button::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.dark-mode .toggle-button::after {
+    left: 25px;
+}
+  
