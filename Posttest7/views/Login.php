@@ -6,7 +6,7 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if ($username === 'Admin' && $password === 'Admin') {
+    if ($username === 'admin' && $password === 'admin') {
       // Jika username dan password adalah admin, berikan akses
       $_SESSION['login'] = true;
       header("Location:Database.php");
